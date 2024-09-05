@@ -1,0 +1,29 @@
+GET http://localhost:5200/pizza
+
+###
+
+GET http://localhost:5200/pizza/4
+
+
+###
+
+POST http://localhost:5200/pizza
+Content-Type: application/json
+
+{
+  "name": "BBQ Beef",
+  "sauce": {
+    "name": "BBQ",
+    "isVegan": false
+  },
+  "toppings": [
+    {
+      "name": "Smoked Beef Brisket",
+      "calories": 250
+    }
+  ]
+}
+
+###
+
+PUT http://localhost:5200/pizza/4/updatesauce?sauceId=2
