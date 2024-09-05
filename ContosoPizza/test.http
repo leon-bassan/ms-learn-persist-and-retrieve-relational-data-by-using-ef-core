@@ -27,3 +27,8 @@ Content-Type: application/json
 ###
 
 PUT http://localhost:5200/pizza/4/updatesauce?sauceId=2
+
+
+###
+
+GET http://localhost:5200/coupon
